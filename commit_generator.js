@@ -47,7 +47,7 @@ const makeCommits = (n) => {
   git.add(activityPath)
      .commit(msg, {"--date": commitDate})
      .push("origin", "main", {"--force": true})
-     .then(() => makeCommits(n - 1))
+.then(() => setTimeout(() => makeCommits(n - 1), 10000))
      .catch((err) => {
        console.error("GitHub rate limit or error:", err.message);
        console.log("Pause and rerun for remaining commits.");
@@ -57,4 +57,4 @@ const makeCommits = (n) => {
 
 // Run
 console.log("🚀 Starting 2000 commits to fill GitHub graph...");
-makeCommits(2000);
+makeCommits(300);
