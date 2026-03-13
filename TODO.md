@@ -1,0 +1,1 @@
+- [x] Step 1: Copy all files from goGreen-clone/ to private/ (overwrite if needed).
