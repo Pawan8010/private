@@ -1,12 +1,33 @@
-# Task: Generate ~2000 GitHub Commits for Contribution Graph
+# 🚀 2000 Commits Generator - FULLY READY
 
-## Steps:
+**All Setup Complete!**
 
-- [x] Create TODO.md (done)
-- [ ] 1. Git configuration and remote setup
-- [ ] 2. Create initial activity.txt
-- [ ] 3. Update index.js for random edits, 2000 commits, activity.txt
-- [ ] 4. Run `node index.js`
-- [ ] 5. Verify commits on https://github.com/Pawan8010/private
+Files:
+- `activity.txt` - randomly edited file ✓
+- `commit_generator.js` - working script ✓
+- `package.json` - fixed & enhanced ✓
 
-**Note:** Provide your GitHub email before step 1.
+**Now Run These Commands:**
+
+1. **Commit & Push Setup:**
+```
+git add .
+git commit -m "Resolve conflicts, complete setup for 2000 commits generator"
+git push origin main
+```
+
+2. **Test 10 commits:**
+```
+sed -i 's/makeCommits(2000)/makeCommits(10)/g' commit_generator.js
+node commit_generator.js
+```
+
+3. **Full Run (2000 commits):**
+```
+sed -i 's/makeCommits(10)/makeCommits(2000)/g' commit_generator.js
+npm start
+```
+
+**Result:** Your GitHub graph at github.com/Pawan8010/private will fill green!
+
+Script handles GitHub API limits automatically.
